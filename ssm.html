@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<style>
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  border: 1px solid #ddd;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+.chart-container {
+    width:  80%;
+    height: 480px;
+    margin: 0 auto;
+}
+.pie-chart-container {
+    width : 360px;
+    height : 360px;
+    float : left;
+}
+.doughnut-chart-container{
+ width : 360px;
+    height : 360px;
+    float : left;
+}
+.doughnut-chart-container-two{
+ width : 360px;
+    height : 360px;
+    float : left;
+}
+</style>
+</head>
+<body>
+
+
+<div class="topnav">
+  <a href="index.html">What are drugs?</a>
+  <a  href="deathstatsbyEaL.html">Death statistics by ethnicity and location</a>
+  <a class="active" href="ssm.html">Some more statistics</a>
+  <a href="team.html">About Project</a>
+</div>
+
+<h1>What is drug overdose?</h1>
+<p aligh=justify>A drug overdose (overdose or OD) is the ingestion or application of a drug or other substance in quantities greater than are recommended. Typically it is used for cases when a risk to health will potentially result. An overdose may result in a toxic state or death.
+Signs and symptoms of an overdose vary depending on the drug or exposure to toxins. The symptoms can often be divided into differing toxidromes. This can help one determine what class of drug or toxin is causing the difficulties.
+<br>
+Accidental drug overdose is currently the leading cause of death in the United States for those under 50. Drug overdose deaths now exceed those attributable to <i>firearms, car accidents, homicides, or HIV/AIDS.</i> <strong>More Americans died from a drug overdose in 2017 alone</strong> <i> than </i>died in the <strong>entire Vietnam War.</strong>
+Most of these deaths are preventable, but the <strong>"tough on crime"</strong> rhetoric of the decades-long drug war and the stigma associated with drug use have blocked the widespread adoption of life-saving overdose prevention and treatment policies.
+The Drug Policy Alliance (DPA) is leading the national effort to reduce drug overdose deaths by promoting sensible, evidence-based solutions at the state and federal level.
+
+</p>
+
+<h1>
+
+
+    <div class="chart-container">
+        <div class="doughnut-chart-container">
+            <canvas id="doughnut-chartcanvas-1"></canvas>
+        </div>
+
+        <div class="doughnut-chart-container-two  ">
+            <canvas id="doughnut-chartcanvas-2"></canvas>
+        </div>
+    </div>
+
+</div>
+<script src="js/jquery.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/doughnut.js"></script>
+
+
+
+</body>
+</html>
