@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="./css/main.css">
+<style>
+
+
+body {
+  background-color: #f1f1f1;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  width: 100%;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 10px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 300px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+ <div class="topnav">
+  <a href="index.html">What are drugs?</a>
+  <a href="deathstatsbyEaL.html">Death statistics by ethnicity and location</a>
+  <a href="ssm.html">Some more statistics</a>
+  <a class="active" href="team.html">About Project</a>
+</div>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<h1>About Project</h1>
+<p>This website represents the statistics of death related to overdose and abuse of drugs</p>
+<hr>
+
+<h2>Members</h2>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <img src="images/mukund.jpeg"  style="width:100%" class="rotateimg180">
+      <h3>Mukund</h3>
+      <p>Designed the website, implemented the charts and made the website responsive by writing the required code</p>
+      <a href="https://github.com/mukundsk">Github</a>
+      <a href="https://www.linkedin.com/in/mukundsk/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/anurag.jpg"  style="width:100%">
+      <h3>Anurag</h3>
+      <p>Selected the datamodel and helped in designing the datamodel </p>
+      <a href="https://github.com/anurag290192">Github</a>
+      <a href="https://www.linkedin.com/in/anurag-shrivastava-b6b3a192/">LinkedIn</a>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="images/divyansh.jpg"  style="width:100%">
+      <h3>Divyansh</h3>
+      <p>Worked on responsive layout design and color schemes</p>
+      <a href="https://github.com/divyansht">Github</a>
+      <a href="https://www.linkedin.com/in/divyanshtiwari/">LinkedIn</a>
+    </div>
+  </div>
+
+</div>
+<h1> Data Model </h1>
+<div class="content">
+  <img src="images/datamodel.jpeg" style="width:50% height:50%">
+
+</div>
+
+<h1>Self Reflection</h1>
+<p align=justify>We learned a lot while completing this assignment from making the responsive charts using chartjs,
+ the importance of CSS and javascript in a website and more importantly team work and how to take team decisions.
+</p>
+
+<!-- END MAIN -->
+</div>
+
+</body>
+</html>
